@@ -1,0 +1,53 @@
+.banner {
+    padding: 100px;
+}
+
+.who {
+    background: url(../../../public/images/who-bg.jpg);
+}
+
+.vision {
+    background: url(../../../public/images/vision-bg.jpg);
+}
+
+.who,
+.vision {
+    margin-bottom: 100px;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.banner-title {
+    font-family: Georgia, serif;
+    margin: 39px 0;
+}
+
+.banner-title h1 {
+    font-size: 3rem;
+}
+
+.banner-text {
+    font-size: 20px;
+}
+
+.brand .banner-title {
+    margin: 0;
+}
+
+.brand{
+    padding: 50px 0;
+    background: #EBEDEE;
+}
+
+.brand-detail img{
+    padding: 0px 30px;
+}
+.brand-text{
+    padding: 150px 0px;
+}
+.banner-btn .btn-more{
+    background: #000;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 2px;
+}

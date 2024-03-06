@@ -1,0 +1,17 @@
+.header{
+    line-height: 75px;
+    /* background: #000; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.header .nav .nav-link{
+    /* color: #562020; */
+    color: black;
+}
+
+.logo{
+    margin-right: 200px;
+}
+.cart{
+    /* background: gray; */
+    margin-left: 200px;
+}
