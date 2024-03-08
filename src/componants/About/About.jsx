@@ -5,8 +5,8 @@ export default function About() {
 
   return (
     <>
-      <div class="banner ">
-        <img src="./images/banner.webp" class="d-block w-100" alt="" />
+      <div className="banner ">
+        <img src="./images/banner.webp" className="d-block w-100" alt="" />
       </div>
 
 

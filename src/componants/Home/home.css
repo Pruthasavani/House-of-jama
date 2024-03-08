@@ -1,0 +1,264 @@
+
+.background .carousel-inner img{
+    width: 100%;
+}
+
+.background .right-banner img {
+    height: 650px;
+    /* width: 100%; */
+    position: relative;
+}
+
+.background .right-banner .text h1 {
+    position: absolute;
+    right: 5%;
+    top: 350px;
+    color: white;
+    font-weight: 400;
+    font-family: Playfair Display;
+    font-size: 70px;
+    text-transform: capitalize;
+}
+
+.row{
+    margin: 0;
+}
+
+/* ---------- trending ------- */
+.trending .bg {
+    background: #F0EFEF;
+    padding: 20px 0px;
+
+}
+
+.trending .bg img {
+    background: #6B373B;
+    padding: 15px;
+    border-radius: 65px;
+}
+
+.trending .bg h5 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    margin: 10px 0px;
+}
+
+.trending .bg p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #4B4848;
+}
+
+
+
+
+/* ---------- exclusive --------------- */
+
+.exclusive .bg .text {
+    /* position: relative; */
+    padding: 100px;
+    /* top: 0px; */
+}
+
+.exclusive .bg img {
+    /* position: absolute; */
+}
+
+.exclusive .bg{
+    background: url(../../../public/images/home/exclusive.png);
+}
+
+.exclusive .bg .text h4 {
+    font-family: Playfair Display;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 500;
+    color: #6B373B;
+    /* line-height: 65px; */
+}
+
+.exclusive .bg .text h1 {
+    font-family: Playfair Display;
+    font-size: 80px;
+    font-weight: 500;
+    color: white;
+}
+
+.button {
+    width: 142px;
+    height: 40px;
+    background: #6B373B;
+    text-align: center;
+    border: none;
+    border-radius: 32px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.button a {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+
+.main-banner {
+    border-bottom: 3px dotted #eee;
+    padding-bottom: 30px;
+}
+
+.main-banner .left-content .thumb img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-banner .left-content .inner-content {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-banner .left-content .inner-content button a {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* color: #AE7744; */
+}
+
+.main-banner .left-content .inner-content button:hover a {
+    color: #AE7744;
+    text-decoration: none;
+    /* color: black; */
+}
+
+.main-banner .left-content .inner-content button:hover {
+    /* background: #AE7744; */
+    background: white;
+    transition: 1s;
+}
+
+.main-banner .left-content .inner-content button {
+    border: 1px solid white;
+    /* border: 1px solid #AE7744; */
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.main-banner .left-content .inner-content h4 {
+    color: #fff;
+    margin-top: -10px;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main-banner .left-content .inner-content span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    font-style: italic;
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+.main-banner .right-content .inner .main-border-button a {
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.main-banner .right-content .inner .main-border-button:hover a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-banner .right-content .inner .main-border-button:hover {
+    background-color: #AE7744;
+    transition: 1s;
+}
+
+.main-banner .right-content .inner .main-border-button {
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.main-banner .right-content .right-first-image {
+    margin-bottom: 28.5px;
+}
+
+.main-banner .right-content .right-first-image .thumb {
+    position: relative;
+    text-align: center;
+}
+
+.main-banner .right-content .right-first-image .thumb img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-banner .right-content .right-first-image .thumb .inner-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.main-banner .right-content .right-first-image .thumb .inner-content h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.main-banner .right-content .right-first-image .thumb .inner-content span {
+    font-size: 16px;
+    color: #fff;
+    font-style: italic;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    text-align: center;
+    background-color: rgba(42, 42, 42, .97);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.main-banner .right-content .right-first-image .thumb:hover .hover-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content p {
+    color: #fff;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
