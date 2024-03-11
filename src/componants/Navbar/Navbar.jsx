@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './navbar.css'
 
 
-
 export default function Navbar() {
+
+  const location = useLocation();
+
+  let currentURl = location.pathname
+
+
   return (
     <>
       <div className="header">
@@ -15,32 +20,32 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+            <Link className={`nav-link ${currentURl === "/" && "active" }`} aria-current="page" to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/about">About</Link>
+            <Link className={`nav-link ${currentURl === "/about" && "active" }`} to="/about">About</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/collection">All Collection</Link>
+            <Link className={`nav-link ${currentURl === "/collection" && "active" }`} to="/collection">All Collection</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/men" >Men</Link>
+            <Link className={`nav-link ${currentURl === "/men" && "active" }`} to="/men" >Men</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/women" >Women</Link>
+            <Link className={`nav-link ${currentURl === "/women" && "active" }`} to="/women" >Women</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/kids">Kids</Link>
+            <Link className={`nav-link ${currentURl === "/kids" && "active" }`} to="/kids">Kids</Link>
           </li>
 
           <li className="nav-item">
             <Link className="nav-link cart" to="/">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i className="fa-solid fa-cart-shopping"></i>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link login" to="/">
-            <i class="fa-solid fa-user"></i>
+            <i className="fa-solid fa-user"></i>
             </Link>
           </li>
         </ul>

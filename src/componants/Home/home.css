@@ -107,8 +107,16 @@
 
 
 
+
+
+
+/* 
+---------------------------------------------
+banner
+--------------------------------------------- 
+*/
+
 .main-banner {
-    border-bottom: 3px dotted #eee;
     padding-bottom: 30px;
 }
 
@@ -117,61 +125,13 @@
     overflow: hidden;
 }
 
-.main-banner .left-content .inner-content {
-    position: absolute;
-    left: 100px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.main-banner .left-content .inner-content button a {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
-    /* color: #AE7744; */
-}
-
-.main-banner .left-content .inner-content button:hover a {
-    color: #AE7744;
-    text-decoration: none;
-    /* color: black; */
-}
-
-.main-banner .left-content .inner-content button:hover {
-    /* background: #AE7744; */
-    background: white;
-    transition: 1s;
-}
-
-.main-banner .left-content .inner-content button {
-    border: 1px solid white;
-    /* border: 1px solid #AE7744; */
-    background-color: transparent;
-    padding: 10px 20px;
-}
-
-.main-banner .left-content .inner-content h4 {
-    color: #fff;
-    margin-top: -10px;
-    font-size: 52px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.main-banner .left-content .inner-content span {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 400;
-    font-style: italic;
-    display: block;
-    margin-bottom: 30px;
-}
 
 
 .main-banner .right-content .inner .main-border-button a {
     color: white;
     text-transform: capitalize;
     letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .main-banner .right-content .inner .main-border-button:hover a {
@@ -187,6 +147,7 @@
 .main-banner .right-content .inner .main-border-button {
     background-color: transparent;
     padding: 10px 20px;
+    margin: 0px 30px;
 }
 
 .main-banner .right-content .right-first-image {
@@ -262,3 +223,131 @@
     padding: 0px 20px;
     margin-bottom: 20px;
 }
+
+
+/* ------------- products ------------  */
+
+.products h1 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #4B4848;
+    margin-bottom: 50px;
+}
+
+.products .prod  img{
+    width: 100%;
+}
+
+.products .prod .text {
+    text-align: center;
+}
+
+.products .prod .text h6 {
+    margin: 8px;
+}
+
+.products .prod .text p {
+    margin: 0px;
+}
+
+.products .prod .btn-view {
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .portfolio-section {
+    margin-top: 4rem;
+  }
+  
+  .portfolio-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .images {
+    overflow: hidden;
+    margin: 60px 0;
+    white-space: nowrap;
+    position: relative;
+  
+  }
+  
+  .images::before,
+  .images::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: " ";
+    z-index: 2;
+  }
+  
+  .images::after {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .images::before {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .images:hover .image-slide {
+    animation-play-state: paused;
+  }
+  
+  .image-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+  }
+  
+  .image-slide img {
+    height: 300px;
+    width: 500px;
+    margin: 0 40px;
+    border-radius: 9px;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .portfolio-section {
+      margin-top: 2rem;
+    }
+  
+    .image-slide img {
+      height: 180px;
+      width: 300px;
+      margin: 0 40px;
+      border-radius: 9px;
+    }
+  
+    .portfolio-section h1 {
+      text-align: center;
+      font-size: 2rem;
+    }
+  
+    .images::after {
+      left: 0;
+      background: none;
+    }
+  
+    .images::before {
+      right: 0;
+      background: none;
+    }
+  }
